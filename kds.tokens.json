@@ -1,0 +1,527 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "Kaar Design System (KDS)",
+  "version": "0.1.0",
+  "description": "shadcn/ui neutral foundation shared by every Kaar product. Only the primary accent changes per product (KEOS also tints its neutrals). Values are theme pairs: light and dark.",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "font": {
+    "heading": "'Outfit', 'Geist', ui-sans-serif, system-ui, sans-serif",
+    "sans": "'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "mono": "'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace",
+    "scale": {
+      "h1": {
+        "size": "30px",
+        "weight": 600,
+        "tracking": "-0.02em",
+        "lineHeight": 1.1,
+        "family": "heading"
+      },
+      "h2": {
+        "size": "20px",
+        "weight": 600,
+        "tracking": "-0.01em",
+        "lineHeight": 1.2,
+        "family": "heading"
+      },
+      "body": {
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": 1.5,
+        "family": "sans"
+      },
+      "label": {
+        "size": "14px",
+        "weight": 500,
+        "family": "sans"
+      },
+      "caption": {
+        "size": "12px",
+        "weight": 500,
+        "family": "sans"
+      },
+      "code": {
+        "size": "12px",
+        "weight": 400,
+        "family": "mono"
+      }
+    }
+  },
+  "radius": {
+    "base": "0.625rem",
+    "sm": "6px",
+    "md": "8px",
+    "lg": "10px",
+    "xl": "14px",
+    "full": "9999px"
+  },
+  "spacing": {
+    "unit": "4px",
+    "scale": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      40,
+      48
+    ]
+  },
+  "control": {
+    "height": {
+      "sm": "32px",
+      "md": "36px",
+      "lg": "40px"
+    }
+  },
+  "shadow": {
+    "xs": {
+      "light": "0 1px 2px 0 rgb(0 0 0/.05)",
+      "dark": "none"
+    },
+    "sm": {
+      "light": "0 1px 3px 0 rgb(0 0 0/.1),0 1px 2px -1px rgb(0 0 0/.1)",
+      "dark": "none"
+    },
+    "md": {
+      "light": "0 4px 6px -1px rgb(0 0 0/.1),0 2px 4px -2px rgb(0 0 0/.1)",
+      "dark": "0 4px 12px rgb(0 0 0/.5)"
+    }
+  },
+  "color": {
+    "neutral": {
+      "background": {
+        "light": "#ffffff",
+        "dark": "#09090b"
+      },
+      "foreground": {
+        "light": "#09090b",
+        "dark": "#fafafa"
+      },
+      "card": {
+        "light": "#ffffff",
+        "dark": "#18181b"
+      },
+      "popover": {
+        "light": "#ffffff",
+        "dark": "#18181b"
+      },
+      "muted": {
+        "light": "#f4f4f5",
+        "dark": "#27272a"
+      },
+      "muted-foreground": {
+        "light": "#63636b",
+        "dark": "#a1a1aa"
+      },
+      "secondary": {
+        "light": "#f4f4f5",
+        "dark": "#27272a"
+      },
+      "secondary-foreground": {
+        "light": "#18181b",
+        "dark": "#fafafa"
+      },
+      "accent": {
+        "light": "#f4f4f5",
+        "dark": "#27272a"
+      },
+      "accent-foreground": {
+        "light": "#18181b",
+        "dark": "#fafafa"
+      },
+      "border": {
+        "light": "#e4e4e7",
+        "dark": "rgb(255 255 255/.1)"
+      },
+      "input": {
+        "light": "#e4e4e7",
+        "dark": "rgb(255 255 255/.15)"
+      },
+      "control": {
+        "light": "#85858e",
+        "dark": "#71717a"
+      },
+      "destructive": {
+        "light": "#dc2626",
+        "dark": "#dc2626"
+      },
+      "destructive-text": {
+        "light": "#dc2626",
+        "dark": "#f87171"
+      },
+      "ring": {
+        "light": "color-mix(in srgb,var(--primary-text) 55%,transparent)",
+        "dark": "color-mix(in srgb,var(--primary-text) 55%,transparent)"
+      }
+    },
+    "status": {
+      "success": {
+        "text": {
+          "light": "#137a38",
+          "dark": "#21cb61"
+        },
+        "solid": {
+          "light": "#15803d",
+          "dark": "#168740"
+        },
+        "subtle": {
+          "light": "rgb(21 128 61/.12)",
+          "dark": "rgb(33 203 97/.16)"
+        }
+      },
+      "warning": {
+        "text": {
+          "light": "#a34a07",
+          "dark": "#f79b55"
+        },
+        "solid": {
+          "light": "#b45309",
+          "dark": "#be5709"
+        },
+        "subtle": {
+          "light": "rgb(180 83 9/.12)",
+          "dark": "rgb(247 155 85/.16)"
+        }
+      },
+      "danger": {
+        "text": {
+          "light": "#b91c1c",
+          "dark": "#f09a9a"
+        },
+        "solid": {
+          "light": "#b91c1c",
+          "dark": "#e03030"
+        },
+        "subtle": {
+          "light": "rgb(185 28 28/.12)",
+          "dark": "rgb(240 154 154/.16)"
+        }
+      },
+      "info": {
+        "text": {
+          "light": "#1d4ed8",
+          "dark": "#98b0f1"
+        },
+        "solid": {
+          "light": "#1d4ed8",
+          "dark": "#426de6"
+        },
+        "subtle": {
+          "light": "rgb(29 78 216/.12)",
+          "dark": "rgb(152 176 241/.16)"
+        }
+      },
+      "neutral": {
+        "text": {
+          "light": "#525c6b",
+          "dark": "#a1a1aa"
+        },
+        "solid": {
+          "light": "#525c6b",
+          "dark": "#6a778b"
+        },
+        "subtle": {
+          "light": "rgb(82 92 107/.12)",
+          "dark": "rgb(161 161 170/.16)"
+        }
+      }
+    },
+    "tag": {
+      "gray": {
+        "bg": {
+          "light": "#ebeced",
+          "dark": "rgb(139 139 146/.22)"
+        },
+        "fg": {
+          "light": "#373a3d",
+          "dark": "#d4d4d8"
+        },
+        "dot": {
+          "light": "#9b9a97",
+          "dark": "#8b8b92"
+        }
+      },
+      "brown": {
+        "bg": {
+          "light": "#f0e4de",
+          "dark": "rgb(185 133 104/.22)"
+        },
+        "fg": {
+          "light": "#5c3a2a",
+          "dark": "#e0b9a3"
+        },
+        "dot": {
+          "light": "#a1735a",
+          "dark": "#b98568"
+        }
+      },
+      "orange": {
+        "bg": {
+          "light": "#fbe3d0",
+          "dark": "rgb(232 131 58/.22)"
+        },
+        "fg": {
+          "light": "#7a3a0c",
+          "dark": "#f6b788"
+        },
+        "dot": {
+          "light": "#e8833a",
+          "dark": "#e8833a"
+        }
+      },
+      "yellow": {
+        "bg": {
+          "light": "#fbeebf",
+          "dark": "rgb(217 167 32/.22)"
+        },
+        "fg": {
+          "light": "#5e4708",
+          "dark": "#f0d070"
+        },
+        "dot": {
+          "light": "#d9a720",
+          "dark": "#d9a720"
+        }
+      },
+      "green": {
+        "bg": {
+          "light": "#dcefdc",
+          "dark": "rgb(93 176 119/.22)"
+        },
+        "fg": {
+          "light": "#1f5130",
+          "dark": "#9fd8ae"
+        },
+        "dot": {
+          "light": "#4a9b64",
+          "dark": "#5db077"
+        }
+      },
+      "teal": {
+        "bg": {
+          "light": "#d2eeea",
+          "dark": "rgb(54 179 164/.22)"
+        },
+        "fg": {
+          "light": "#14504a",
+          "dark": "#8fdcd2"
+        },
+        "dot": {
+          "light": "#2a9d8f",
+          "dark": "#36b3a4"
+        }
+      },
+      "blue": {
+        "bg": {
+          "light": "#d6e6f3",
+          "dark": "rgb(90 154 216/.22)"
+        },
+        "fg": {
+          "light": "#1b4466",
+          "dark": "#9cc7ec"
+        },
+        "dot": {
+          "light": "#3b82c4",
+          "dark": "#5a9ad8"
+        }
+      },
+      "purple": {
+        "bg": {
+          "light": "#e8dff2",
+          "dark": "rgb(167 126 211/.22)"
+        },
+        "fg": {
+          "light": "#4f2a73",
+          "dark": "#cfb4ee"
+        },
+        "dot": {
+          "light": "#9b6bc7",
+          "dark": "#a77ed3"
+        }
+      },
+      "pink": {
+        "bg": {
+          "light": "#f7dfea",
+          "dark": "rgb(224 112 168/.22)"
+        },
+        "fg": {
+          "light": "#7a2450",
+          "dark": "#f1a9c8"
+        },
+        "dot": {
+          "light": "#d95b9b",
+          "dark": "#e070a8"
+        }
+      },
+      "red": {
+        "bg": {
+          "light": "#fbdcd8",
+          "dark": "rgb(232 100 93/.22)"
+        },
+        "fg": {
+          "light": "#8a2220",
+          "dark": "#f4a7a1"
+        },
+        "dot": {
+          "light": "#e0524b",
+          "dark": "#e8645d"
+        }
+      }
+    },
+    "product": {
+      "core": {
+        "name": "Kaar Core",
+        "primary": {
+          "light": "#18181b",
+          "dark": "#fafafa"
+        },
+        "primary-foreground": {
+          "light": "#fafafa",
+          "dark": "#18181b"
+        },
+        "primary-text": {
+          "light": "#18181b",
+          "dark": "#fafafa"
+        }
+      },
+      "kaartech": {
+        "name": "Kaar Technologies",
+        "primary": {
+          "light": "#8a1c2b",
+          "dark": "#e8798a"
+        },
+        "primary-foreground": {
+          "light": "#ffffff",
+          "dark": "#1a0509"
+        },
+        "primary-text": {
+          "light": "#8a1c2b",
+          "dark": "#e8798a"
+        }
+      },
+      "ktern": {
+        "name": "KTern.AI",
+        "primary": {
+          "light": "#f1703c",
+          "dark": "#f1703c"
+        },
+        "primary-foreground": {
+          "light": "#ffffff",
+          "dark": "#ffffff"
+        },
+        "primary-text": {
+          "light": "#b8420f",
+          "dark": "#f1703c"
+        }
+      },
+      "k4k": {
+        "name": "K4K",
+        "primary": {
+          "light": "#ee4961",
+          "dark": "#ee4961"
+        },
+        "primary-foreground": {
+          "light": "#ffffff",
+          "dark": "#ffffff"
+        },
+        "primary-text": {
+          "light": "#c9264a",
+          "dark": "#ee4961"
+        }
+      },
+      "keos": {
+        "name": "KEOS",
+        "primary": {
+          "light": "#771e2c",
+          "dark": "#771e2c"
+        },
+        "primary-foreground": {
+          "light": "#ffffff",
+          "dark": "#ffffff"
+        },
+        "primary-text": {
+          "light": "#771e2c",
+          "dark": "#e8808f"
+        },
+        "surface-overrides": {
+          "note": "This product tints its neutral base; values replace the shared neutrals.",
+          "light": {
+            "background": "#f9f8f5",
+            "card": "#fcfbf9",
+            "popover": "#fcfbf9",
+            "foreground": "#1f1c17",
+            "muted": "#f0eee9",
+            "muted-foreground": "#646058",
+            "secondary": "#f0eee9",
+            "secondary-foreground": "#2a251d",
+            "accent": "#f0eee9",
+            "accent-foreground": "#2a251d",
+            "border": "#e3e0d9",
+            "input": "#e3e0d9",
+            "control": "#85817a",
+            "success": "#12713a"
+          },
+          "dark": {
+            "background": "#1c1b19",
+            "card": "#262523",
+            "popover": "#262523",
+            "foreground": "#f4f3f0",
+            "muted": "#32312e",
+            "muted-foreground": "#b0aca4",
+            "secondary": "#32312e",
+            "secondary-foreground": "#f4f3f0",
+            "accent": "#32312e",
+            "accent-foreground": "#f4f3f0",
+            "border": "rgb(255 255 255/.12)",
+            "input": "rgb(255 255 255/.16)",
+            "control": "#7a7770"
+          }
+        }
+      },
+      "wingman": {
+        "name": "Wingman",
+        "primary": {
+          "light": "#6a2e9e",
+          "dark": "#a78bfa"
+        },
+        "primary-foreground": {
+          "light": "#ffffff",
+          "dark": "#120a2a"
+        },
+        "primary-text": {
+          "light": "#6a2e9e",
+          "dark": "#a78bfa"
+        }
+      },
+      "guardian": {
+        "name": "Guardian",
+        "primary": {
+          "light": "#1d4ed8",
+          "dark": "#60a5fa"
+        },
+        "primary-foreground": {
+          "light": "#ffffff",
+          "dark": "#04122e"
+        },
+        "primary-text": {
+          "light": "#1d4ed8",
+          "dark": "#60a5fa"
+        }
+      }
+    }
+  },
+  "accessibility": {
+    "textContrastMin": "4.5:1",
+    "uiBoundaryContrastMin": "3:1",
+    "notes": [
+      "Use primary-text, not primary, for links, focus rings and checked controls.",
+      "Color is never the only signal: status and tag colors always pair with a label or icon.",
+      "Pastel tag backgrounds are fills; text on them uses the matching tag fg."
+    ]
+  }
+}
